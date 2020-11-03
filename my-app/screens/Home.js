@@ -23,7 +23,8 @@ export default function Home(props) {
 
   return (
     <View style={styles.container}>
-        <Text style={[styles.text, styles.textTitle]}>Doge Animation App</Text>
+        <Image style ={styles.img} source={require("../assets/img/pokemon-logo.png")} />
+        <Text style={[styles.text, styles.textTitle]}>Informational Pokedex</Text>
         <Text style={styles.text}>by: Joshua Wood</Text>
 
       {/*<StatusBar style="auto" />*/}
@@ -48,6 +49,10 @@ const styles = StyleSheet.create({
     color: "black",
     fontSize: 35,
     fontWeight: "700",
+  },
+  img: {
+    width: 400,
+    height: 200,
   },
 
 });
